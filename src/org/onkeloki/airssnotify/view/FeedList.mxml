@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" minWidth="150" >
+<mx:Script>
+        <![CDATA[
+            [Embed(source="../../../../../assets/icons/feed_add.png")]
+            [Bindable]
+            public var addSkin:Class;
+            [Embed(source="../../../../../assets/icons/feed_delete.png")]
+            [Bindable]
+            public var delSkin:Class;
+        ]]>
+    </mx:Script> 
+
+
+
+			<mx:List width="100%" height="100%" />
+			<mx:HBox width="100%" horizontalAlign="right">
+			<mx:Button icon="{addSkin}" label="add feed" id="addButton" />
+			
+			<mx:Button icon="{delSkin}" label="delete feed" /></mx:HBox>
+
+</mx:VBox>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--  -->
+
+<application xmlns="http://ns.adobe.com/air/application/1.5">
+
+<!-- appId="de.powerflasher.air.ExampleApp"
+  
+ -->
+	<!--  
+		AIR Application Descriptor File: 
+		
+		author	: Stephan Partzsch
+		website	: http://www.powerflasher.de
+		date	: 05.10.2007
+		
+		Specifies parameters for identifying, installing, and launching AIR applications.
+		For more information see Adobe Livedocs. (http://livedocs.adobe.com/labs/air/1/devappsflash/)
+	
+	    The root element of the descriptor, "application" has these attributes:
+	    appID             - A string identifying this application. Every AIR 
+	                        application must have a unique appID. The recommended 
+	                        form of an appID is a dot-delimited, reverse-DNS-style 
+	                        string, such as: "com.example.ApplicationName"
+	                        The appID string must be between 17-255 characters long
+	                        and may include the following characters:
+	                        0-9 
+	                        a-z 
+	                        A-Z 
+	                        . (dot)
+	                        - (hyphen)              
+	    version           - An application version designator.
+	                        Examples: "1.0", ".4", "0.5", "Alpha 1"
+	    minimumPatchLevel - the minimum patch level of the runtime version that this 
+	                        application requires. Example: 45
+	    xmlns             - The AIR namespace: http://ns.adobe.com/air/application/1.0.M5 
+	                        The last segment of the namespace specifies the version 
+	                        of the runtime required for this application to run.
+	
+	--> 
+    
+    <name>
+    	<!-- 
+			The application name displayed by the operating system. (Required.)
+			Displayed in the application's title bar and in the Windows Start menu. 
+		-->
+    </name>
+    <filename>reflact AG FLV-Player</filename>
+    <id>reflactAGFLVPlayer</id>
+    <version>v4</version>
+   
+    <description>
+        <!-- Displayed in the AIR application installer. (Optional) -->
+    </description>
+    <installFolder>reflactSoftware</installFolder>
+    
+    <copyright>
+    	<!-- Copyright information for the AIR application. (Optional) -->
+    </copyright>
+    
+
+    
+
+    
+    <!-- *******************************************************************************************************
+    		The installFolder and programMenuFolder property can contain any Unicode (UTF-8) character except the following, 
+         	which are prohibited from use as folder names on various file systems: 
+			
+			Character	Hex Code
+			_________	__________
+			various		0x00 - x1F
+			*			x2A
+			"			x22
+			:			x3A
+			>			x3C
+			<			x3E
+			?			x3F
+			\			x5C
+			|			x7C 
+	
+	******************************************************************************************************** -->
+    
+    
+    <!-- The window into which the root content file will be loaded. -->
+    <initialWindow>
+    
+    
+        <title>Airss Notify</title>
+        
+        
+        <!-- The type of system chrome to use (either "standard" or "none"). Optional. Default standard. -->
+         <systemChrome>none</systemChrome>  
+         <transparent>true</transparent>
+        <visible>true</visible>
+        
+        <!-- 
+        	If not set, window size is determined by settings in the root SWF file 
+			or by the operating system (Html). 
+		-->
+             
+        <width>400</width>
+        <height>300</height>
+        <content>AirssNotify.swf</content>        
+        
+    </initialWindow> 
+    
+    
+    <!-- 
+		If you do not specify an icon property, the operating system will display a default icon.
+    	The path specified is relative to the application root directory. PNG, GIF, and JPEG are supported.  
+		If an image is specified, it must be the exact size. The image files must 
+		be included in the AIR file.
+	-->
+    <icon>
+        <image16x16>icons/icon_016.png</image16x16>
+        <image32x32>icons/icon_032.png</image32x32>
+        <image48x48>icons/icon_048.png</image48x48>
+        <image128x128>icons/icon_128.png</image128x128> 
+    </icon>
+    
+    
+    <!-- 
+    	If the handleUpdates element is present in the application descriptor, 
+		then the AIR runtime will defer version updates to this application.
+ 
+    	 <handleUpdates/>
+    -->
+    
+    
+    <!-- 
+    	Defines the file types for which this application may register.
+
+		Use the Shell object file registration methods  at run-time to set an  
+		application as the default application for a file type.
+
+		Icons are optional. If used, the path specified is relative to the 
+		application root directory. The icon files must be included in the AIR
+		file.
+
+	    <fileTypes>
+	        <fileType>
+	            <name>adobe.VideoFile</name>
+	            <extension>avf</extension>
+	            <description>Adobe Video File (Optional)</description>
+	            <contentType>application/vnd.adobe.video-file (Optional)</contentType>
+	        </fileType>
+	    </fileTypes>
+	-->
+	
+
+	
+    
+</application>
